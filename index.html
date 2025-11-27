@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Bildportfolio</title>
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="bilder/favicon.ico">
+</head>
+
+<body>
+    <header class="hero">
+
+        <!-- HEADERBILDEN MED ASPECT RATIO -->
+        <picture>
+            <source type="image/webp"
+                srcset="./bilder/header-600.webp 600w,
+                        ./bilder/header-1200.webp 1200w,
+                        ./bilder/header.webp 2000w"
+                sizes="100vw">
+
+            <img src="./bilder/header.webp"
+                 alt="Header-bild"
+                 class="header-image"
+                 width="1350" height="156"
+                 fetchpriority="high">
+        </picture>
+
+        <!-- LOGOTYP MED FASTA MÅTT FÖR NOLL CLS -->
+    <div class="logo-wrapper">
+        <a href="index.html">
+            <img src="./bilder/logo3.svg"
+                 alt="Logotyp"
+                 class="logo"
+                 width="250"
+                 height="120">
+        </a>
+    </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="bildredigering.html">Bildredigering</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- OPTIMERAT GALLERI -->
+        <div class="grid">
+
+            <picture>
+                <source srcset="./bilder/bild1redigerad.webp" type="image/webp">
+                <img src="./bilder/bild1redigerad.jpg"
+                     alt="Bild 1"
+                     width="405" height="304"
+                     fetchpriority="high"
+                     style="aspect-ratio: 405 / 304;">
+            </picture>
+
+            <!-- LCP-BILD: fetchpriority hög och ingen lazy -->
+            <picture>
+                <source srcset="./bilder/bild2redigerad.webp" type="image/webp">
+                <img src="./bilder/bild2redigerad.jpg"
+                     alt="Bild 2"
+                     width="405" height="304"
+                     fetchpriority="high"
+                                      style="aspect-ratio: 405 / 304;">
+            </picture>
+
+            <!-- Lazy-loading på övriga -->
+
+            <picture>
+                <source srcset="./bilder/bild3redigerad.webp" type="image/webp">
+                <img src="./bilder/bild3redigerad.jpg"
+                     alt="Bild 3"
+                     width="405" height="304"
+                     fetchpriority="high"
+                                      style="aspect-ratio: 405 / 304;">
+            </picture>
+
+        </div>
+
+        <div class="text-container">
+            <p>Denna uppgift har gått ut på att skapa en webbplats som presenterar ett antal redigerade bilder.
+                Bilderna har behandlats så att de blivit enhetliga med varandra och med webbplatsens design.
+                Webbplatsen består av tre sidor och har ett fungerande navigationssystem som gör det möjligt att
+                bläddra mellan sidorna. Alla sidor innehåller logotyp och favicon, och webbplatsen är responsiv
+                så att den fungerar bra på olika enheter och skärmstorlekar.
+                De givna bilderna har behandlats så att de fått en enhetlig stil och har publicerats på.
+                Program för redigering av bilderna har varit GIMP, och skapandet av logotyper Inkscape.</p>
+        </div>
+
+    </main>
+</body>
+</html>

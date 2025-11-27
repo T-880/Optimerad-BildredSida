@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildredigering</title>
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="bilder/favicon.ico">
+</head>
+
+<body>
+    <header class="hero">
+        <!-- HEADERBILDEN MED ASPECT RATIO -->
+        <picture>
+            <source type="image/webp"
+                srcset="./bilder/header-600.webp 600w,
+                        ./bilder/header-1200.webp 1200w,
+                        ./bilder/header.webp 2000w"
+                sizes="100vw">
+            <img src="./bilder/header.webp"
+                 alt="Header-bild"
+                 class="header-image"
+                 width="1350" height="156"
+                 fetchpriority="high">
+        </picture>
+
+        <!-- LOGOTYP MED FASTA MÅTT FÖR NOLL CLS -->
+        <div class="logo-wrapper">
+            <a href="index.html">
+                <img src="./bilder/logo3.svg"
+                     alt="Logotyp"
+                     class="logo"
+                     width="250"
+                     height="120">
+            </a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="bildredigering.html">Bildredigering</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="edit-gallery">
+            <h2>Bildredigering</h2>
+
+            <!-- OPTIMERADE BILDPAR -->
+            <div class="edit-pair">
+                <div>
+                    <picture>
+                        <source srcset="bilder/bilserie001.webp" type="image/webp">
+                        <img src="bilder/bilserie001.jpg"
+                             alt="Original Bild 1"
+                             width="405" height="304"
+                             fetchpriority="high"
+                             style="aspect-ratio: 405 / 304;"
+                             class="clickable-img">
+                    </picture>
+                    <p><strong>Original Bild 1</strong></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="bilder/bild1redigerad.webp" type="image/webp">
+                        <img src="bilder/bild1redigerad.jpg"
+                             alt="Redigerad Bild 1"
+                             width="405" height="304"
+                             fetchpriority="high"
+                             style="aspect-ratio: 405 / 304;"
+                             class="clickable-img">
+                    </picture>
+                    <p><strong>Redigerad Bild 1:</strong><br>I bild ett har jag med hjälp av GiMP gjort bilden ljusare
+                        och givit den lite mer kontrast för att få fram motivet lite bättre. Jag vitbalanserade bilden,
+                        ökade mättnaden och korrigerade kontrasten en smula för att få fram korrekt färger. Sedan har
+                        jag ändrat färg på några av blommorna från lila till rött genom att markera objektet med path
+                        tool, och sedan ändra nyansen genom colorize. Jag gjorde sedan samma sak med himmelen för att få
+                        den att ändra kulör från grön till en mer behaglig och naturlig blå. Jag har även ökat
+                        färgtemperaturen några grader för att få en finare lyster i bilden.</p>
+                </div>
+            </div>
+
+            <div class="edit-pair">
+                <div>
+                    <picture>
+                        <source srcset="bilder/bilserie006.webp" type="image/webp">
+                        <img src="bilder/bilserie006.jpg"
+                             alt="Original Bild 2"
+                             width="405" height="304"
+                             fetchpriority="high"
+                             style="aspect-ratio: 405 / 304;"
+                             class="clickable-img">
+                    </picture>
+                    <p><strong>Original Bild 2</strong></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="bilder/bild2redigerad.webp" type="image/webp">
+                        <img src="bilder/bild2redigerad.jpg"
+                             alt="Redigerad Bild 2"
+                             width="405" height="304"
+                             fetchpriority="high"
+                             style="aspect-ratio: 405 / 304;"
+                             class="clickable-img">
+                    </picture>
+                    <p><strong>Redigerad Bild 2:</strong><br>I bild två har jag först och främst vridit bilden så att
+                        den skulle erhålla samma struktur som tidigare bild. Jag beskärde sedan bilden och använda samma
+                        proportioner som tidigare bild för att skapa en symmetrisk enlighet. Sedan vitbalanserade jag
+                        bilden och ökade ljusstyrkan rejält och även kontrasten till bilden så att allt såg klart och
+                        tydligt ut, som på bild ett. Jag ökade sedan mättnaden och experimenterade med värmen för att få
+                        bilden att se naturtrogen och färgrik ut.
+                    </p>
+                </div>
+            </div>
+
+            <div class="edit-pair">
+                <div>
+                    <picture>
+                        <source srcset="bilder/bilserie010.webp" type="image/webp">
+                        <img src="bilder/bilserie010.jpg"
+                             alt="Original Bild 3"
+                             width="405" height="304"
+                             fetchpriority="high"
+                             style="aspect-ratio: 405 / 304;"
+                             class="clickable-img">
+                    </picture>
+                    <p><strong>Original Bild 3</strong></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="bilder/bild3redigerad.webp" type="image/webp">
+                        <img src="bilder/bild3redigerad.jpg"
+                             alt="Redigerad Bild 3"
+                             width="405" height="304"
+                             fetchpriority="high"
+                             style="aspect-ratio: 405 / 304;"
+                             class="clickable-img">
+                    </picture>
+                    <p><strong>Redigerad Bild 3:</strong><br>I bild tre har jag först och främst korrigerat så att
+                        proportionerna matchade de tidigare redigerade bilderna. Sedan korrigerade jag ljuset och
+                        färgerna för att få dem så naturtrogna som möjligt. Eftersom bilden var filtrerad genom ett
+                        röd/rosa filter så använde jag mig av grön reglering (motsattsfärg till röd) samt jobbade med
+                        färgtemperaturen tills färger började se naturliga ut. Sedan vitbalanserade jag bilden och
+                        stabiliserade mättnaden efter detta och reglerade kontrasten tills resultatet såg naturligt men
+                        färgstarkt och skarpt ut som de tidigare bilderna. Till sist redigerade jag bort originalmärket
+                        från tjurens båda öron genom att använda mig utav healing tool. Detta då tjurens öron var
+                        håriga, vilket gör att detta verktyg går att använda alldeles utmärkt.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="imgPopup" onclick="this.style.display='none'">
+        <img id="popupImg" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.clickable-img');
+        const popup = document.getElementById('imgPopup');
+        const popupImg = document.getElementById('popupImg');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                popup.style.display = 'flex';
+                popupImg.src = img.src;
+            });
+        });
+    </script>
+</body>
+
+</html>

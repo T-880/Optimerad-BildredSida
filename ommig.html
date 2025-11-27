@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig</title>
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="bilder/favicon.ico">
+</head>
+
+<body>
+    <header class="hero">
+        <!-- HEADERBILDEN MED ASPECT RATIO -->
+        <picture>
+            <source type="image/webp"
+                srcset="./bilder/header-600.webp 600w,
+                        ./bilder/header-1200.webp 1200w,
+                        ./bilder/header.webp 2000w"
+                sizes="100vw">
+            <img src="./bilder/header.webp"
+                 alt="Header-bild"
+                 class="header-image"
+                 width="1350" height="156"
+                 fetchpriority="high">
+        </picture>
+
+        <!-- LOGOTYP MED FASTA MÅTT FÖR NOLL CLS -->
+        <div class="logo-wrapper">
+            <a href="index.html">
+                <img src="./bilder/logo3.svg"
+                     alt="Logotyp"
+                     class="logo"
+                     width="250"
+                     height="120">
+            </a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="bildredigering.html">Bildredigering</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about-me">
+            <h2>Om mig</h2>
+            
+            <!-- PROFILBILD OPTIMERAD MED PICTURE -->
+            <picture>
+                <source srcset="bilder/portrait.webp" type="image/webp">
+                <img src="bilder/portrait.png"
+                     alt="Profilbild"
+                     class="profile-pic"
+                     width="300" height="300"
+                     fetchpriority="high"
+                     style="aspect-ratio: 1 / 1;">
+            </picture>
+
+            <div class="text-container">
+                <p>Andreas Trella heter jag, men majoriteten av människorna i min omgivning kallar mig enbart för Trella
+                    och har gjort det sedan första klass.<br><br>
+                    Jag är från Västerås, men har bott och antingen studerat eller jobbat i Uppsala, Umeå och Göteborg.
+                    Numera bor jag i Helsingborg med eventuella planer att flytta till Malmö inom ett år eller två. Jag
+                    har främst jobbat som musikjournalist för tidningen GAFFA sedan 2017, men efter chefs-byte och för
+                    många år inom samma (väldigt döende) fält har det känts som att det är dags att prova något nytt.
+                    Webbutveckling kändes som något väldigt intressant att iallafall försöka sätta tänderna i.<br><br>
+                    Jag har tidigare studerat Mediateknik, Journalistik, Kommunikation, Ljudteknik, Ljudproduktion och
+                    Musikpsykologi. Av allt det sitter jag på en kandidat i Mediaproduktion och "påbyggande magister"
+                    inom Journalistik.<br><br>
+                    Mitt största intresse i livet är musik, då jag nästan oironiskt anser detta som religion. Jag gillar
+                    även att laga mat, men gillar ännu mer att spela datorspel (främst klassiker, boomer shooters och
+                    annat trams). Jag spelar även en hel del instrument, men sjunger helst karaoke när tillfälle ges.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
