@@ -205,18 +205,14 @@ main {
         flex-wrap: wrap;
     }
 
-/* Logotyp post */   
-.header-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+    .header-image {
+        height: 200px;
+        object-fit: cover;
+    }
 
+    /* Logotyp — exakt som referenssidan */
     .logo {
         height: 40%;
         max-height: 100px;
     }
 }
-
-
-
