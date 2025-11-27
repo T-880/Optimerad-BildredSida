@@ -69,6 +69,28 @@ main {
     margin-top: 20px;
 }
 
+
+/* === Galleri / Grid (index.html) === */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    justify-content: center;
+}
+
+.grid picture {
+    width: 30%;
+    display: block;
+}
+
+.grid picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* === Textlayout (alla sidor) === */
 .text-container {
     max-width: 800px;
@@ -208,3 +230,4 @@ main {
     height: 120px;
 
 }
+
