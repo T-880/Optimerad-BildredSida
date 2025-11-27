@@ -204,14 +204,6 @@ main {
         width: 100%;
     }
 
-    .logo {
-        max-width: 70%;
-        max-height: 70%;
-        width: auto;
-        height: auto;
-    }
-}
-
 /* === Stabil yta för logotyp (fixar CLS helt) === */
 .logo-wrapper {
     position: absolute;
@@ -223,11 +215,3 @@ main {
     justify-content: center;
     align-items: center;
 }
-
-/* Loggan skalas men ändrar inte layout */
-.logo {
-    width: 250px;
-    height: 120px;
-
-}
-
