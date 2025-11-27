@@ -18,13 +18,6 @@ body {
     aspect-ratio: 1350 / 156; /* Stabil höjd utan CLS */
 }
 
-.header-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
 /* === Logotyp (samma regler som referenssidan) === */
 .logo {
     position: absolute;
@@ -217,4 +210,5 @@ main {
         max-height: 100px;
     }
 }
+
 
